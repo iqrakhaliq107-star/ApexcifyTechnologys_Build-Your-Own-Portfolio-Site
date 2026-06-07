@@ -1,26 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>chocolate web</title>
-    <link rel="stylesheet" href="index.css">
-    
-
-
-
-
-
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Iqra Khaliq | CS Portfolio · Neural Canvas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<script src="index.js"></script>
 
+  <header>
+    <nav>
+      <div class="logo">IQRA<span class="accent">KHALIQ</span></div>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">Profile</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Connect</a></li>
+        <li><button class="theme-toggle" id="darkModeToggle" aria-label="Dark mode"><i class="fas fa-moon"></i></button></li>
+      </ul>
+      <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-bg-shape"></div>
+      <div class="container hero-content">
+        <div class="hero-text">
+          <div class="hero-tag">✦ COMPUTER SCIENCE STUDENT ✦</div>
+          <h1>Iqra <span class="gradient-text">Khaliq</span></h1>
+          <div class="typewriter" id="typewriter"></div>
+          <p class="hero-description">
+            Building intelligent & human-friendly digital ecosystems. Passionate about clean code, creative UI/UX, and youth-led tech impact.  
+            I turn ideas into responsive web apps and meaningful open-source contributions.
+          </p>
+          <div class="btn-group">
+            <a href="#projects" class="btn btn-primary">✨ Explore Work</a>
+            <a href="#contact" class="btn btn-outline">🤝 Collaborate</a>
+            <a href="files/mycv.pdf" download class="btn btn-outline"><i class="fas fa-download"></i> CV</a>
+          </div>
+          <div class="hero-stats">
+            <span><i class="fas fa-code"></i> 10+ Projects</span>
+            <span><i class="fas fa-globe"></i> 3 Tech Stacks</span>
+            <span><i class="fas fa-award"></i> RACSIT'24</span>
+          </div>
+        </div>
+        <div class="hero-img">
+          <div class="img-wrapper">
+            <img src="images/myphoto.jpeg" alt="Iqra Khaliq">
+            <div class="glow-ring"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"></span>
+          <h2 class="section-title">Digital DNA</h2>
+        </div>
+        <div class="profile-card">
+          <div class="profile-grid">
+            <div class="profile-text">
+              <p>Motivated CS student with a hunger for emerging technologies, web ecosystems, and human-centered design. Recognized for fast adaptability, structured problem-solving, and collaborative energy. Eager to contribute in R&D, full‑stack innovation, and tech for social good.</p>
+              <div class="info-items">
+                <span class="info-item"><i class="fas fa-user-check"></i> Father: Abdul Khaliq</span>
+                <span class="info-item"><i class="fas fa-flag-pakistan"></i> Pakistani</span>
+                <span class="info-item"><i class="fas fa-map-pin"></i> Punjab Region</span>
+                <span class="info-item"><i class="fas fa-birthday-cake"></i> DOB: 15-05-2005</span>
+              </div>
+            </div>
+            <div class="profile-honor">
+              <i class="fas fa-microphone-alt"></i>
+              <div><strong>🏅 International Recognition</strong><br> RACSIT-2024 Conference Participant — presented research perspective on next‑gen computing.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"></span>
+          <h2 class="section-title">Technical Arsenal</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card"><i class="fab fa-html5"></i><span>HTML5</span></div>
+          <div class="skill-card"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+          <div class="skill-card"><i class="fab fa-js"></i><span>JavaScript</span></div>
+          <div class="skill-card"><i class="fab fa-react"></i><span>React.js</span></div>
+          <div class="skill-card"><i class="fab fa-python"></i><span>Python</span></div>
+          <div class="skill-card"><i class="fas fa-database"></i><span>SQL</span></div>
+          <div class="skill-card"><i class="fas fa-laptop-code"></i><span>Responsive Web</span></div>
+          <div class="skill-card"><i class="fas fa-code"></i><span>C++</span></div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"></span>
+          <h2 class="section-title">Featured Builds</h2>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-badge">full-stack</div>
+            <div class="project-icon"><i class="fas fa-tree"></i></div>
+            <h3>Pakistan Tourism Portal</h3>
+            <p>Interactive heritage + northern areas guide with booking simulation & cultural map.</p>
+            <div class="tech-stack"><span>HTML5</span><span>CSS3</span><span>JS</span><span>Java</span></div>
+            <div class="project-hover">view case study</div>
+          </div>
+          <div class="project-card">
+            <div class="project-badge">e‑commerce</div>
+            <div class="project-icon"><i class="fas fa-store"></i></div>
+            <h3>Urban Cart (Full Stack)</h3>
+            <p>Modern shopping experience: cart, product filtering, auth & admin dashboard.</p>
+            <div class="tech-stack"><span>React.js</span><span>Flask</span><span>MongoDB</span></div>
+            <div class="project-hover">live demo</div>
+          </div>
+          <div class="project-card">
+            <div class="project-badge">desktop app</div>
+            <div class="project-icon"><i class="fas fa-hospital"></i></div>
+            <h3>Hospital Management System</h3>
+            <p>Console-based C++ system: patient records, billing, appointments (OOP + file handling).</p>
+            <div class="tech-stack"><span>C++</span><span>OOP</span><span>File I/O</span></div>
+            <div class="project-hover">repository</div>
+          </div>
+          <div class="project-card">
+            <div class="project-badge">cross-platform</div>
+            <div class="project-icon"><i class="fas fa-cloud-sun"></i></div>
+            <h3>Weatherly Forecast App</h3>
+            <p>Real‑time weather mobile app with dynamic UI and RESTful API integration.</p>
+            <div class="tech-stack"><span>Flutter</span><span>Dart</span><span>OpenWeather API</span></div>
+            <div class="project-hover">prototype</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"></span>
+          <h2 class="section-title">Education & Leadership</h2>
+        </div>
+        <div class="resume-grid">
+          <div class="edu-card">
+            <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h3>🎓 Academic Journey</h3>
+            <ul>
+              <li><strong>BS Computer Science</strong> – University of Education (2023–2027) | CGPA: 3.6+</li>
+              <li><strong>F.Sc (General Science)</strong> – FG Degree College</li>
+              <li><strong>Matric (Medical Science)</strong> – Army Public School</li>
+            </ul>
+          </div>
+          <div class="edu-card">
+            <div class="timeline-icon"><i class="fas fa-hand-sparkles"></i></div>
+            <h3>🤝 Volunteering & Leadership</h3>
+            <ul>
+              <li><i class="fas fa-seedling"></i> <strong>Alkhidmat Foundation</strong> – Disaster relief, education support & community uplift</li>
+              <li><i class="fas fa-users"></i> <strong>Passionate Pak Organization</strong> – Youth skill workshops & leadership facilitator</li>
+              <li><i class="fas fa-chalkboard-user"></i> <strong>Conference Speaker</strong> – RACSIT-2024 International</li>
+              <li><i class="fas fa-language"></i> Multilingual: English, Urdu, Pashto</li>
+            </ul>
+            <div class="cv-download">
+              <a href="files/mycv.pdf" download class="btn-small"><i class="fas fa-file-pdf"></i> Download full CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"></span>
+          <h2 class="section-title">Let's Forge the Future</h2>
+        </div>
+        <div class="contact-wrapper">
+          <div class="contact-card">
+            <div class="contact-methods">
+              <div class="contact-item"><i class="fas fa-phone-alt"></i><span>+92 320 9768747</span></div>
+              <div class="contact-item"><i class="fas fa-envelope"></i><span>iqrakhaliq107@gmail.com</span></div>
+              <div class="contact-item"><i class="fas fa-location-dot"></i><span>Muhallah New Town, Masjid Muhammadiya, Punjab</span></div>
+              <div class="social-links">
+                <a href="https://www.linkedin.com/in/iqra-khaliq-3b8048413" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/iqrakhaliq107-star" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://wa.me/923209768747" target="_blank"><i class="fab fa-whatsapp"></i></a>
+              </div>
+            </div>
+            <div class="contact-form">
+              <form id="contactForm">
+                <input type="text" placeholder="Your name *" required>
+                <input type="email" placeholder="Email address *" required>
+                <textarea rows="4" placeholder="Tell me about your idea / collaboration / opportunity..."></textarea>
+                <button type="submit">Send message <i class="fas fa-paper-plane"></i></button>
+              </form>
+              <p class="form-note">📬 Reply within 24h — Let's build something remarkable.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="scroll-top" id="scrollTopBtn"><i class="fas fa-chevron-up"></i></div>
+
+  <script src="script.js" defer></script>
 </body>
-
-
-
-
-
 </html>
